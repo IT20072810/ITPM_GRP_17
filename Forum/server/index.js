@@ -27,7 +27,7 @@ app.post("/api/login", (req, res) => {
 	}
 
 	res.json({
-		message: "Login successfully",
+		message: "Welcome!",
 		id: result[0].id,
 	});
 });
@@ -76,7 +76,7 @@ app.post("/api/create/thread", async (req, res) => {
 	 });
 
 	res.json({
-		message: "Thread created successfully!",
+		message: "Thread created!",
 		threads: threadList,
 	});
 });
