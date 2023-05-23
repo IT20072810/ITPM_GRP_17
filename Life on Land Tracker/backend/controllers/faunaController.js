@@ -23,7 +23,7 @@ exports.getAllFauna = async (req, res) => {
 exports.getFaunaById = async (req, res) => {
     try {
         const fauna = await Fauna.findById(req.params.id);
-        res.status(200).json(fauna);
+        res.status(404).json(fauna);
     } catch (error) {
         res.status(500).json(error);
     }
@@ -32,7 +32,7 @@ exports.getFaunaById = async (req, res) => {
 exports.updateFauna = async (req, res) => {
     try {
         const fauna = await Fauna.findByIdAndUpdate(req.params.id, req.body, { new: true });
-        res.status(200).json(fauna);
+        res.status(404).json(fauna);
     } catch (error) {
         res.status(500).json(error);
     }
