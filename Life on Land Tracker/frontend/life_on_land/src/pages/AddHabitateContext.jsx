@@ -64,7 +64,7 @@ const AddHabitatPage = () => {
             <Upload accept="image/*"
               beforeUpload={() => false}
               onChange={(info) => handleImageUpload(info.file)}>
-              <Button icon={<UploadOutlined />}>Click to Upload</Button>
+              <Button icon={<UploadOutlined />}>Upload Image</Button>
             </Upload>
           </Form.Item>
           <Form.Item wrapperCol={{ ...layout.wrapperCol, offset: 8 }}>
