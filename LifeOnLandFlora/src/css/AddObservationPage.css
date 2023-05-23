@@ -1,0 +1,14 @@
+.add-observation-page {
+    background-image: url('../assets/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+  }
+  
+  .add-observation-page .ant-form {
+    padding: 20px;
+    max-width: 600px;
+    margin: auto;
+    border-radius: 10px;
+  }
+  
