@@ -62,7 +62,7 @@ const Home = () => {
 
 				<form className='homeForm' onSubmit={handleSubmit}>
 					<div className='home__container'>
-						<label htmlFor='thread'>Title / Description</label>
+						<label htmlFor='thread'> Add a Title / Description</label>
 						<input
 							type='text'
 							name='thread'

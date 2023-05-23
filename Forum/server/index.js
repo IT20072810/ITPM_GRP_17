@@ -45,7 +45,7 @@ app.post("/api/register", async (req, res) => {
 
 		users.push(newUser);
 		return res.json({
-			message: "Account created successfully!",
+			message: "Signed Up!",
 		});
 	}
 	res.json({
