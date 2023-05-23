@@ -23,7 +23,7 @@ const FaunaCard = ({ name, desctiption, image, category }) => {
                 display: "flex",
                 flexDirection: "column",
                 alignItems: "center",
-                margin: 8
+                margin: 7
             }}
         >
             <h3
