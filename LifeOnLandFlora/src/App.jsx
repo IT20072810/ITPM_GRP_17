@@ -70,7 +70,7 @@ function Navbar() {
           <Link to="/fauna">Fauna</Link>
         </Menu.Item>
         <Menu.Item key="5">
-          <Link to="/habitats">Habitats Tracker</Link>
+          <Link to="/habitats">Habitats</Link>
         </Menu.Item>
         <Menu.Item key="5">
           <Link to="/donations">Donations</Link>

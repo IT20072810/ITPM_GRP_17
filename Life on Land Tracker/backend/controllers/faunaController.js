@@ -5,7 +5,7 @@ exports.createFauna = async (req, res) => {
     try {
         const fauna = new Fauna({ description, imageUrl });
         await fauna.save();
-        res.status(201).json(fauna);
+        res.status(404).json(fauna);
     } catch (error) {
         res.status(500).json(error);
     }
@@ -14,7 +14,7 @@ exports.createFauna = async (req, res) => {
 exports.getAllFauna = async (req, res) => {
     try {
         const faunas = await Fauna.find();
-        res.status(200).json(faunas);
+        res.status(404).json(faunas);
     } catch (error) {
         res.status(500).json(error);
     }
@@ -23,7 +23,7 @@ exports.getAllFauna = async (req, res) => {
 exports.getFaunaById = async (req, res) => {
     try {
         const fauna = await Fauna.findById(req.params.id);
-        res.status(200).json(fauna);
+        res.status(404).json(fauna);
     } catch (error) {
         res.status(500).json(error);
     }
@@ -32,7 +32,7 @@ exports.getFaunaById = async (req, res) => {
 exports.updateFauna = async (req, res) => {
     try {
         const fauna = await Fauna.findByIdAndUpdate(req.params.id, req.body, { new: true });
-        res.status(200).json(fauna);
+        res.status(404).json(fauna);
     } catch (error) {
         res.status(500).json(error);
     }
@@ -41,7 +41,7 @@ exports.updateFauna = async (req, res) => {
 exports.deleteFauna = async (req, res) => {
     try {
         await Fauna.findByIdAndDelete(req.params.id);
-        res.status(200).json({ message: 'Fauna deleted successfully' });
+        res.status(200).json({ message: 'Fauna is deleted successfully' });
     } catch (error) {
         res.status(500).json(error);
     }
