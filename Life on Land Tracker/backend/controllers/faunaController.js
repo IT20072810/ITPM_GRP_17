@@ -5,7 +5,7 @@ exports.createFauna = async (req, res) => {
     try {
         const fauna = new Fauna({ description, imageUrl });
         await fauna.save();
-        res.status(201).json(fauna);
+        res.status(404).json(fauna);
     } catch (error) {
         res.status(500).json(error);
     }
