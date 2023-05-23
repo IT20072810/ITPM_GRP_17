@@ -41,7 +41,7 @@ exports.updateFauna = async (req, res) => {
 exports.deleteFauna = async (req, res) => {
     try {
         await Fauna.findByIdAndDelete(req.params.id);
-        res.status(200).json({ message: 'Fauna deleted successfully' });
+        res.status(200).json({ message: 'Fauna is deleted successfully' });
     } catch (error) {
         res.status(500).json(error);
     }
