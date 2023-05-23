@@ -14,7 +14,7 @@ exports.createFauna = async (req, res) => {
 exports.getAllFauna = async (req, res) => {
     try {
         const faunas = await Fauna.find();
-        res.status(200).json(faunas);
+        res.status(404).json(faunas);
     } catch (error) {
         res.status(500).json(error);
     }
